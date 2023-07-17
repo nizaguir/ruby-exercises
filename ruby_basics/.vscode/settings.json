@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.tabs.defaultColor": "terminal.ansiYellow",
+    "terminal.integrated.cwd": "",
+    "editor.wordWrap": "on"
+}

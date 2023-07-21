@@ -20,13 +20,13 @@ def find_absolute_values(numbers)
   # use #map to iterate through each item of the numbers (an array)
   # return an array of absolute values of each number
   # The abs() function in Ruby returns the absolute value of the integer.
-  numbers.map {|number| number.abs}
+  numbers.map { |number| number.abs }
 end
 
 def find_low_inventory(inventory_list)
   # use #select to iterate through each item of the inventory_list (a hash)
   # return a hash of items with values less than 4
-  inventory_list.select {|item, value| value < 4}
+  inventory_list.select { |_item, value| value < 4 }
 end
 
 def find_word_lengths(word_list)
@@ -34,7 +34,7 @@ def find_word_lengths(word_list)
   # return a hash with each word as the key and its length as the value
   # hint: look at the documentation and review the reduce examples in basic enumerable lesson
   # Go over answer-->  https://stackoverflow.com/questions/70019607/does-rubys-reduce-return-the-accumulator-with-curly-braces
-  word_list.reduce(Hash.new()) do |hash,word|
+  word_list.reduce(Hash.new) do |hash, word|
     hash[word] = word.length
     hash
   end

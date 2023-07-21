@@ -49,7 +49,7 @@ end
 def count_empty_seats(chart)
   # take a chart and return the number of empty (nil) seats in it
   # NOTE: `chart` should **not** be mutated
-  chart.flatten --> [nil, "Bob", "Joe", nil, nil, "Bill"]
+  chart.flatten -> [nil, "Bob", "Joe", nil, nil, "Bill"]
   chart.flatten.count(nil)
 end
 
